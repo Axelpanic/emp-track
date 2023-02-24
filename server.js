@@ -11,7 +11,7 @@ const db = mysql.createConnection({
   // MySQL username,
   user: "root",
   // MySQL password
-  password: "frog",
+  password: 'root',
   database: "employee_db",
 });
 // allows db.query to be async
