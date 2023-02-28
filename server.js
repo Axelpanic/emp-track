@@ -11,16 +11,14 @@ const db = mysql.createConnection({
   // MySQL username,
   user: "root",
   // MySQL password
-  password: 'root',
+  password: "Debbie08",
   database: "employee_db",
 });
-// allows db.query to be async
+
 db.query = util.promisify(db.query);
 
-// Initial prompt
-// Start the menu loop
 init();
-// Starts the application and brings up questions
+
 async function init() {
   const { action } = await inquirer.prompt([
     {

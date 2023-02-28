@@ -1,11 +1,13 @@
 DROP DATABASE IF EXISTS employee_db;
 CREATE DATABASE employee_db;
 USE employee_db;
+/* making department table */
 
 CREATE TABLE department (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30)
 );
+/* making roles table*/
 
 CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -17,6 +19,7 @@ CREATE TABLE role (
     ON DELETE SET NULL
 
 );
+/* making employee table */
 
 CREATE TABLE employee (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
